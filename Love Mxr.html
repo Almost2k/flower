@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Mxr</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        canvas {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="loveMxrCanvas" width="500" height="500"></canvas>
+    <script>
+        const canvas = document.getElementById('loveMxrCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // 设置字体样式
+        ctx.font = 'bold 80px Arial';
+        ctx.fillStyle = '#E77776';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+
+        // 绘制文本
+        ctx.fillText('Love Mxr', canvas.width / 2, canvas.height / 2);
+    </script>
+</body>
+</html>
